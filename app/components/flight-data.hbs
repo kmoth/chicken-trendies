@@ -1,0 +1,21 @@
+<div class='chart'>
+    {{!-- This is gross. I've since read that lots of logic in the template is bad practice. --}}
+    {{#if (eq this.mode 'A')}}
+    <EmberChart @type='bar' @data={{this.data}} @options={{this.options}} width=1200 />
+    {{else}}
+        {{#if (eq this.mode 'B')}}
+        <EmberChart @type='line' @data={{this.data}} @options={{this.options}} width=1200 />
+        {{else}}
+        <EmberChart @type='doughnut' @data={{this.data}} @options={{this.options}} width=1200 />
+        {{/if}}
+    {{/if}}
+    <button href='#' type='button' class='modebutton' {{on 'click' (fn this.setMode 'A')}}>
+        {{if (eq this.mode 'A') "> "}}Bar
+    </button>
+    <button href='#' type='button' class='modebutton' {{on 'click' (fn this.setMode 'B')}}>
+        {{if (eq this.mode 'B') "> "}}Line
+    </button>
+    <button href='#' type='button' class='modebutton' {{on 'click' (fn this.setMode 'C')}}>
+        {{if (eq this.mode 'C') "> "}}🍩
+    </button>
+</div>

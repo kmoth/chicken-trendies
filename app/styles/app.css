@@ -1,0 +1,29 @@
+h1 {
+    font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.appcontainer {
+    min-height: 100vh;
+    background: #f9f9f9;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chart {
+    max-height: 500px;
+    display: inline-block;
+}
+
+.modebutton {
+    padding: 10px 30px 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #016aba;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+    display: inline-block;
+    cursor: pointer;
+}
