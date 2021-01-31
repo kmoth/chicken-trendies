@@ -1,7 +1,6 @@
 # chicken-trendies
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+As is suggested by the name, this application displays information about the word count for each of SpaceX's launches... Wait... Actually the name makes no sense. Pay not attention to that.
 
 ## Prerequisites
 
